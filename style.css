@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geo", system-ui;
+    background-image:url(assets/img/bg.png);
+    font-size: 62.5%;
+    
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.planets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet {
+    margin: 10px 0;
+}
+
+/* Tamaño de los planetas basado en su escala comparativa */
+.planet-sol {
+    width: 200px;
+}
+
+.planet-mercurio {
+    width: 50px;
+}
+
+.planet-venus {
+    width: 80px;
+}
+
+.planet-tierra {
+    width: 100px;
+}
+
+.planet-marte {
+    width: 90px;
+}
+
+.planet-jupiter {
+    width: 150px;
+}
+
+.planet-saturno {
+    width: 140px;
+}
+
+.planet-urano {
+    width: 110px;
+}
+
+.planet-neptuno {
+    width: 105px;
+}
+
+/* Estilos para pantallas grandes (Desktop) */
+@media(min-width: 1024px) {
+    .planets {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .planet {
+        margin: 20px;
+    }
+}
+
+
+
+
+
+
+    
