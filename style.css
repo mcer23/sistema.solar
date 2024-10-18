@@ -57,6 +57,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    position: relative;
 }
 .planets--universe-sun img{
     width: 227px;
@@ -64,6 +65,7 @@ main{
     height: auto;
     margin-top: 20px;
     padding-bottom: 16px;
+    position: relative;
     
 }
 .planets--universe-mercury img{
@@ -71,18 +73,21 @@ main{
     max-width: 37px;
     height: auto;
     padding-bottom: 11px;
+    position: relative;
 }
 .planets--universe-venus img{
     width:38px;
     max-width: 53px;
     height: auto;
     padding-bottom: 8px;
+    position: relative;
 }
 .planets--universe-earth img{
     width:46px;
     max-width: 64px;
     height: auto;
     padding-bottom: 1px;
+    position: relative;
 
 }
 .planets--universe-mars img{
@@ -90,40 +95,50 @@ main{
     max-width: 51px;
     height: auto;
     padding-bottom: 5px;
+    position: relative;
 }
 .planets--universe-jupiter img{
     width:79px;
     max-width: 109px;
     height: auto;
     padding-bottom: 24px;
+    position: relative;
 }
 .planets--universe-saturn img{
     width:96px;
     max-width: 134px;
     height: auto;
     padding-bottom: 28px;
+    position: relative;
 }
 .planets--universe-uranus img{
     width:68px;
     max-width: 95px;
     height: auto;
     padding-bottom: 18px;
+    position: relative;
 }
 .planets--universe-neptune img{
     width:54px;
     max-width: 75px;
     height: auto;
     padding-bottom: 28px;
+    position: relative;
 }
 /*! Dektop version */
 @media(min-width: 1024px) {
-    main{
-        width:100%;
-        height: 832px;
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Cambia a 100% */
+        height: 100%; /* Cambia a 100% */
+        max-width: 1440px; /* Esto limita el ancho, si lo necesitas */
         background-image: url(assets/img/bg-desktop.png);
-        background-size: cover;
-    
+        background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+        background-position: center;
     }
+    
     /* header */
     .header--title {
         width:100%;
@@ -145,63 +160,89 @@ main{
     .planets--universe{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        margin: auto 0;
+        position:relative;
+        width:100%;
+        height: 823px;
     }
     .planets--universe-sun img{
         width: 260px;
         height: auto;
-        margin-right: 50px;
-        
+        position: absolute; /* El Sol se posicionará relativo a .planets--universe */
+        left: 50x; /* Lo coloca en la posición horizontal X=102px */
+        top: 50%; /* Ajusta según tu diseño para centrarlo verticalmente */
+        transform: translateY(-50%)       /* Posiciona el Sol en X = 102px */
     }
     .planets--universe-mercury img{
         width:33px;
         height: auto;
-        margin-right: 30px;
+        position: absolute;
+        left: 400px;
+        top: 48%; /* Ajusta esta posición para alinear */
+        transform: translateY(-50%);
     }
     .planets--universe-venus img{
         width:50px;
         max-width: 53px;
-        height: auto;
-        margin-right: 40px;
+        position: absolute;
+        left: 500px;
+        top: 52%; /* Ajusta esta posición para alinear */
+        transform: translateY(-50%);
     }
     .planets--universe-earth img{
         width:56px;
         max-width: 64px;
         height: auto;
-        margin-right: 45px;
+        left: 600px;
+        top: 47%;
+        transform: translateY(-50%);
 
     }
     .planets--universe-mars img{
         width:47px;
         max-width: 51px;
         height: auto;
-        margin-right: 50px;
+        position: absolute;
+        left: 700px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .planets--universe-jupiter img{
         width:90px;
         max-width: 109px;
         height: auto;
-        margin-right: 60px;
+        position: absolute;
+        left: 800px;
+        top: 48%;
+        transform: translateY(-50%);
     }
     .planets--universe-saturn img{
         width:120px;
         max-width: 134px;
         height: auto;
-        margin-right: 45px;
+        position: absolute;
+        left: 950px;
+        top: 53%;
+        transform: translateY(-50%);
     }
     .planets--universe-uranus img{
         width:80px;
         max-width: 95px;
         height: auto;
-        margin-right: 40px;
+        position: absolute;
+        left: 1150px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .planets--universe-neptune img{
         width:70px;
         max-width: 75px;
         height: auto;
-        margin-right: 30px; 
+        position: absolute;
+        left: 1300px;
+        top: 48%;
+        transform: translateY(-50%);
 
     }
     /* padding-left empuja right */
