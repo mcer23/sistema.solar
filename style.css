@@ -170,33 +170,33 @@ main{
         width: 260px;
         height: auto;
         position: absolute; /* El Sol se posicionará relativo a .planets--universe */
-        left: 50x; /* Lo coloca en la posición horizontal X=102px */
+        left: 130px; /* Lo coloca en la posición horizontal X=102px */
         top: 50%; /* Ajusta según tu diseño para centrarlo verticalmente */
-        transform: translateY(-50%)       /* Posiciona el Sol en X = 102px */
+        transform: translateY(-55%)       /* Posiciona el Sol en X = 102px */
     }
     .planets--universe-mercury img{
         width:33px;
         height: auto;
         position: absolute;
-        left: 400px;
-        top: 48%; /* Ajusta esta posición para alinear */
+        left: 500px;
+        top: 50%; /* Ajusta esta posición para alinear */
         transform: translateY(-50%);
     }
     .planets--universe-venus img{
         width:50px;
         max-width: 53px;
         position: absolute;
-        left: 500px;
-        top: 52%; /* Ajusta esta posición para alinear */
+        left: 570px;
+        top: 50%; /* Ajusta esta posición para alinear */
         transform: translateY(-50%);
     }
     .planets--universe-earth img{
         width:56px;
         max-width: 64px;
         height: auto;
-        left: 600px;
-        top: 47%;
-        transform: translateY(-50%);
+        left: 660px;
+        top: 60%;
+        transform: translateY(0%);
 
     }
     .planets--universe-mars img{
@@ -204,7 +204,7 @@ main{
         max-width: 51px;
         height: auto;
         position: absolute;
-        left: 700px;
+        left: 740px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -213,8 +213,8 @@ main{
         max-width: 109px;
         height: auto;
         position: absolute;
-        left: 800px;
-        top: 48%;
+        left: 830px;
+        top: 50%;
         transform: translateY(-50%);
     }
     .planets--universe-saturn img{
@@ -222,8 +222,8 @@ main{
         max-width: 134px;
         height: auto;
         position: absolute;
-        left: 950px;
-        top: 53%;
+        left: 980px;
+        top: 50%;
         transform: translateY(-50%);
     }
     .planets--universe-uranus img{
@@ -231,7 +231,7 @@ main{
         max-width: 95px;
         height: auto;
         position: absolute;
-        left: 1150px;
+        left: 1160px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -241,7 +241,7 @@ main{
         height: auto;
         position: absolute;
         left: 1300px;
-        top: 48%;
+        top: 50%;
         transform: translateY(-50%);
 
     }
